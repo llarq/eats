@@ -1,0 +1,100 @@
+.about {
+    padding-top: 54px;
+    padding-bottom: 50px;
+    text-align: center;
+    @media (min-width: 768px) {
+        padding-bottom: 100px;
+    }
+    @media (min-width: 1200px) {
+        padding-bottom: 190px;
+    }
+
+    &-title {
+        margin-bottom: 30px;
+        font-family: $second-family;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 82%;
+        letter-spacing: 0em;
+        color: rgba(0, 0, 0, 0.8);
+        @media (min-width: 768px) {
+            font-size: 34px;
+            margin-bottom: 50px;
+        }
+        @media (min-width: 1200px) {
+            font-size: 44px;
+            margin-bottom: 70px;
+        }
+    }
+
+    &-text {
+        width: 568px;
+    }
+
+    &-heading {
+        margin-bottom: 17px;
+        font-family: $font-family;
+        // font-weight: 700;
+        // font-size: 24px;
+        // line-height: 150%;
+        // letter-spacing: 0em;
+        @extend %text-subtitle;
+        color: #fa4a0c;
+    }
+
+    &-description {
+        margin-bottom: 17px;
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 142%;
+        letter-spacing: 0.01em;
+        color: #252b42;
+        @media (min-width: 768px) {
+            font-size: 30px;
+        }
+        @media (min-width: 1200px) {
+            font-size: 40px;
+        }
+    }
+
+    &-addition {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 158%;
+        letter-spacing: 0.01em;
+        color: #737373;
+        @media (min-width: 768px) {
+            font-size: 18px
+        }
+        @media (min-width: 1200px) {
+            font-size: 24px;
+        }
+    }
+
+}
+
+.about-item {
+    @extend %flex-items;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+
+    &:nth-child(2n) {
+        flex-direction: row-reverse;
+    }
+    @media (min-width: 1200px) {
+        gap: 250px;
+    }
+}
+@media (max-width: 767px) {
+    .about-item img {
+        display: none;
+    }
+}
+
+
+
